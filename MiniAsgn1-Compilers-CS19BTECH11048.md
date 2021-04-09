@@ -56,4 +56,5 @@ Options in LLVM:
  Os- This is to produce the smallest possible executable file. This is generally used for systems that have limited memory.  
  Oz- Further tries to reduce the size of executable file. 
  
- **Link of .md file in GitHub: ** <>
+ 
+ **Link of .md file in GitHub: ** <https://github.com/gokul-gk-02/MiniAssgn2-Compilers/blob/main/MiniAsgn1-Compilers-CS19BTECH11048.md>
