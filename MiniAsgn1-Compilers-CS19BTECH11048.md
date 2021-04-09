@@ -24,4 +24,20 @@ Options in GCC: (Here the programs that have to be compiled are taken to be main
   This will save all the intermediary files, main.i, main.o, main.s and also the executable file a upon successful compilation.  
 *	gcc main.c –o main –lfile  
   This command is used to link the code main.c to the shared library file.so to produce the final executable file main.    
-*	There are also other options like gcc –help, gcc –version to give information regarding the gcc installed in the system.  
+*	There are also other options like gcc –help, gcc –version to give information regarding the gcc installed in the system.    
+Options in LLVM:  
+* The most basic form: clang main.c  
+  This one is just to compile the program main.c and produce an executable file a.out in case of successful compilation. Or print the error messages in case of an unsuccessful compilation.  
+ * clang main.c -fsyntax-only  
+  This one is just to check whether the program main.c is correct or not.  
+ * clang main.c -S -emit-llvm -o    
+  This one is to print the unoptimized LLVM code.  
+ * clang main.c -S -O3 -o  
+  This one is to print the native machine code as output.  
+ * There are also clang --version, --help, etc. to get help, version number, etc.  
+ * There are preprocessor flags like, -C to include comments, -H to show header includes and nesting depths, etc.  
+ * There are diagnosit flags like, -R<remark> to enable the specified remark, etc.  
+ 
+ ### 2) Write a note on the various frontends that these compilers support.  
+   The main front ends supported by GCC are, C (by gcc), C++ (by g++), Objective C, Fortran, Ada (by GNAT), Go and D. There are also many more front ends supported by GCC, but have not yet been integrated into the main distribution of GCC.  
+   The front ends supported by LLVM include Ada, C, C++, D, Delphi, Fortran, Haskell, Julia, Objective C, Rust, Swift, etc.  
