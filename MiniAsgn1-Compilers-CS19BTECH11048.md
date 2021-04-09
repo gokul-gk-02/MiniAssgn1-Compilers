@@ -41,3 +41,17 @@ Options in LLVM:
  ### 2) Write a note on the various frontends that these compilers support.  
    The main front ends supported by GCC are, C (by gcc), C++ (by g++), Objective C, Fortran, Ada (by GNAT), Go and D. There are also many more front ends supported by GCC, but have not yet been integrated into the main distribution of GCC.  
    The front ends supported by LLVM include Ada, C, C++, D, Delphi, Fortran, Haskell, Julia, Objective C, Rust, Swift, etc.  
+   
+ ### 3) Use these compilers to generate code for various architectures using its various backends and report your findings.  
+  * Clang is faster and uses lesser memory than GCC for compiling the same code.  
+  * GCC supports more architectures than LLVM and also has more front end supports.  
+  * But GCC is more advantageous than LLVM in performance optimizations.  
+
+ ### 4) Compilers come with various optimization levels: Focusing on options O0, O1, O2, O3  as well as -Os, -Oz, run various codes using these predetermined passes and report your findings.  
+ For GCC, LLVM,   
+ O0- No optimizations.  
+ O1- Resulting executables are smaller and faster than those in O0.  
+ O2- Further optimization for O1, this includes instructions scheduling. It provides the maximum optimizations while keeping the executable file size as low as O0.  
+ O3- This can increase the size of executable file in order to speed up the execution. But in some cases, its not advisable to use this optimization.
+ Os- This is to produce the smallest possible executable file. This is generally used for systems that have limited memory.  
+ Oz- Further tries to reduce the size of executable file. 
