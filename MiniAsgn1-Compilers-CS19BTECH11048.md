@@ -57,4 +57,4 @@ Options in LLVM:
  Oz- Further tries to reduce the size of executable file. 
  
  
- **Link of .md file in GitHub: ** <https://github.com/gokul-gk-02/MiniAssgn1-Compilers/blob/main/MiniAsgn1-Compilers-CS19BTECH11048.md>
+ **Link of .md file in GitHub:** <https://github.com/gokul-gk-02/MiniAssgn1-Compilers/blob/main/MiniAsgn1-Compilers-CS19BTECH11048.md>
